@@ -1,0 +1,232 @@
+* {
+  font-family: "sans-serif";
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body {
+  background-color: #f5f3f3;
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+}
+section {
+  display: inline-block;
+}
+
+.perfil {
+  height: 100vh;
+  width: 25%;
+  background-image: linear-gradient(
+    to bottom,
+    #170677,
+    #030697,
+    #0961d4,
+    #587cf0,
+    #060988
+  );
+}
+#foto {
+  width: 100%;
+  padding-top: 20%;
+  margin: auto;
+}
+#foto > img {
+  border: 5px solid rgb(12, 10, 10);
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+#menu {
+  padding-top: 20px;
+}
+
+#menu a {
+  margin: auto;
+  padding-top: 10px;
+  margin-left: 40px;
+  text-decoration-color: none;
+}
+.content {
+  position: relative;
+  float: right;
+  height: 100vh;
+  width: 73vw;
+  text-align: start;
+  vertical-align: middle;
+  line-height: 2rem;
+}
+
+#data {
+  position: absolute;
+  margin-top: 15%;
+}
+
+#data > h1 {
+  font-size: 3rem;
+  color: #03020a;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+#data > p {
+  margin: 25px 0px 25px 0px;
+  font-size: 1.5rem;
+}
+
+#data address {
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.rede-social {
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+#data address > p {
+  color: #08080c;
+}
+#data address > p > a {
+  color: #200583;
+}
+
+a:visited {
+  color: #e7e6eb;
+}
+
+#menu a:link {
+  color: rgb(235, 245, 239);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#menu a:hover {
+  transition: 1s;
+  background: #080505;
+  color: #05802a;
+}
+
+.rede-social > li,
+a {
+  padding: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.rede-social > li > a > img {
+  width: 50px;
+  height: auto;
+  padding-right: 15px;
+}
+
+/* Pagina Conhecimentos */
+
+#content-conhecimentos {
+  margin-top: 10%;
+}
+
+#content-conhecimentos h1 {
+  font-size: 2rem;
+  color: #1505a7;
+}
+
+#content-conhecimentos li {
+  font-size: 1.5rem;
+}
+
+#content-conhecimentos p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #563635;
+}
+
+#content-conhecimentos a {
+  color: #3a5a40;
+  text-decoration: none;
+  border-radius: 2%;
+  margin-right: 20px;
+}
+
+#content-conhecimentos a:hover {
+  transition: 1s;
+  background: #3a5a40;
+  color: #e0dddb;
+}
+
+#content-objetivo {
+  margin-top: 8%;
+}
+
+#content-objetivo h1 {
+  color: #2c07ce;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+#content-objetivo p {
+  margin-top: 15px;
+  text-align: start;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 675px) {
+  body {
+    position: relative;
+  }
+  .perfil {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 25px;
+    height: 23vh;
+    text-align: left;
+  }
+  #foto {
+    padding-top: 5px;
+    width: 30vw;
+  }
+
+  #foto img {
+    float: left;
+    width: 70%;
+  }
+
+  #menu {
+    padding-top: 5px;
+    line-height: normal;
+    width: 70%;
+  }
+
+  .content {
+    width: 100vw;
+    text-align: center;
+  }
+  #data {
+    margin: 20px;
+  }
+
+  #data > address,
+  .rede-social {
+    text-align: left;
+    margin: 0;
+  }
+  #content-conhecimentos {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #content-conhecimentos a {
+    color: #3a5a40;
+    text-decoration: none;
+  }
+
+  #content-objetivo {
+    margin-top: 10px;
+    margin: 20px;
+    text-align: start;
+  }
+
+  #content-objetivo h1 {
+    text-align: center;
+  }
+}
